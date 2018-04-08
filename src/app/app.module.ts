@@ -11,6 +11,7 @@ import { HeaderComponent } from './modules/global-pages/header/header.component'
 import { HomePageComponent } from './modules/pages/home-page/home-page.component';
 import { FormsComponent } from './modules/pages/forms/forms.component';
 import { AppGlobalApiService } from './app-global-api/app-global-api.service'
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AppGlobalControllerService } from './app-global-controller/app-global-controller.service';
 
 
@@ -32,6 +33,7 @@ import { AppGlobalControllerService } from './app-global-controller/app-global-c
     providers: [
         AppGlobalApiService
         , AppGlobalControllerService
+        , { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
     bootstrap: [AppComponent]
 })
