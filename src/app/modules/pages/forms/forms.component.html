@@ -21,10 +21,10 @@
                                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description" formControlName="description">
                                 <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
                             </div>
-                            <div class="form-check">
+                            <!-- <div class="form-check">
                                 <label class="form-check-label" for="exampleCheck1">Minimum of 3 characters</label>
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="validate" value="1">On
-                            </div>
+                            </div> -->
                             <input type="submit" class="btn btn-primary" value="Submit Form" [disabled]="!rForm.valid">
                         </div>
                     </div>
