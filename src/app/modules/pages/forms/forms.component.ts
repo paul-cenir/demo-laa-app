@@ -26,8 +26,7 @@ export class FormsComponent implements OnInit {
         this.name = post.name;
     }
     ngOnInit() {
-        console.log(this.dataService.cars);
-        console.log(this.dataService.sampleHttpRequest());
+
         this.sampleGlobalText = this.dataService.myData();
         this.rForm.get('validate').valueChanges.subscribe(
             (validate) => {
