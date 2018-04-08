@@ -35,11 +35,26 @@ p {
     font-weight:bold; 
     margin-bottom: 1rem;
 }
+.hs-4 {
+    font-size: 25px;
+    color: $color-3;
+    font-weight:bold; 
+    margin-bottom: 1rem;
+}
 
 .p-ml-1 {
     max-width: 486px;
 }
 
+//background and color global 
+.bg-c-1 {
+    background: $color-1;
+}
+.c-c-1 {
+    p {
+        color:$color-3;
+    }
+}
 
 
 //global sidebar design
@@ -63,11 +78,32 @@ p {
     cursor: pointer;
     font-size: 14px;
     outline: inherit;
-    margin-bottom: 1rem !important;
+    margin-bottom: 1.5rem !important;
     display: block;
     &:focus {
         outline: none;
     }
+}
+.btn-global-2 {
+    min-width: 400px;
+    height: 40px;
+    background: $color-1;
+    color:$color-3;
+    border-radius: 0;
+    margin-bottom: 1.5rem !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-global-3 {
+    min-width: 400px;
+    height: 40px;
+    background: transparent;
+    border: solid 2px $color-3 !important;
+    color:$color-3;
+    border-radius: 0;
+    margin-bottom: 1.5rem !important;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 //global circle 1
