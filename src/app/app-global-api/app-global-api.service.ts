@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http'
 
 
 export class AppGlobalApiService {
-    apiRoot: string = "http://appfactorieapi-dev.azurewebsites.net/";
+    apiRoot: string = "https://appfactorieapi-dev.azurewebsites.net/";
     constructor(private http: HttpClient) {
     }
 
