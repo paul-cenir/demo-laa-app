@@ -18,8 +18,8 @@ import { AppGlobalControllerService } from './app-global-controller/app-global-c
 
 @NgModule({
     declarations: [
-        AppComponent
-        , HeaderComponent
+        HeaderComponent
+        , AppComponent
         , HomePageComponent
         , FormsComponent
     ],
