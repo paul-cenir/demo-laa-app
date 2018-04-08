@@ -1,5 +1,5 @@
 {
-    "name": "angular4-sass",
+    "name": "demo-laa-app",
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
@@ -56,6 +56,6 @@
     },
     "engines": {
         "node": "8.11.1",
-        "npm": "5.6.0"
+        "npm": "5.7.1"
     }
 }
