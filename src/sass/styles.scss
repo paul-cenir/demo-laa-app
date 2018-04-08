@@ -1,8 +1,115 @@
 @import './variables';
 @import './mixins';
 
-.width-100 {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+
+//global start here
+
+html,body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+//global text style start here
+p {
+    color:$color-1;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hs-1 {
+    font-size: 44px;
+    color: $color-1;
+    font-weight:200; 
+    margin-bottom: 1rem;
+}
+.hs-2 {
+    font-size: 25px;
+    color: $color-1;
+    font-weight:bold; 
+    margin-bottom: 1rem;
+}
+.hs-3 {
+    font-size: 14px;
+    color: $color-1;
+    font-weight:bold; 
+    margin-bottom: 1rem;
+}
+
+.p-ml-1 {
+    max-width: 486px;
+}
+
+
+
+//global sidebar design
+.global-hamburger i {
+    position: absolute;
+    top: 20px;
+    left: 36px;
+    cursor: pointer;
+    font-size: 30px;
+    color:$color-1;
+}
+
+//global button design
+.btn-global-1 {
+    background: none;
+    color: $color-2;
+    border: none;
+    border-bottom: solid 2px;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    outline: inherit;
+    margin-bottom: 1rem !important;
+    display: block;
+    &:focus {
+        outline: none;
+    }
+}
+
+//global circle 1
+.global-c-1 {
+    width: 168px;
+    height: 168px;
+    border: solid 10px $color-1;
+    border-radius: 50%;
+    position: relative;
+  
+    margin: auto;
+}
+.global-c-1-num {
+    position: absolute;
+    top: 0px;
+    left: -4px;
+    background:$color-1;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.w-100 {
     width: 100%;
+}
+.m-auto-g {
+    margin: auto;
 }
 .col-centered {
     display: block !important;

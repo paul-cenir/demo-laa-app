@@ -3,12 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http'
 
 @Injectable()
-
-
-
-
-
-
 export class AppGlobalApiService {
     apiRoot: string = "https://appfactorieapi-dev.azurewebsites.net/";
     constructor(private http: HttpClient) {
@@ -40,8 +34,6 @@ export class AppGlobalApiService {
         return 'My Reactive Form';
     }
 
-
-
     sampleHttpRequest() {
         let url = `${this.apiRoot}/api/Preview/GetAllUserAppInfo?userId=2651`;
         this.http.get(url).subscribe(
@@ -51,11 +43,6 @@ export class AppGlobalApiService {
                 console.log("Error occured.");
             }
         )
-
-    }
-
-    ngOnInit() {
-        alert(234);
 
     }
 }

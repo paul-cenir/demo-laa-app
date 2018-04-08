@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppGlobalApiService } from '../../../app-global-api/app-global-api.service'
 import { AppGlobalControllerService } from '../../../app-global-controller/app-global-controller.service';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap'
 
 
 @Component({
@@ -10,6 +11,7 @@ import { AppGlobalControllerService } from '../../../app-global-controller/app-g
     styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit {
+    closeResult: string;
     rForm: FormGroup;
     post: any;
     description: string = '';
@@ -17,7 +19,7 @@ export class FormsComponent implements OnInit {
     sampleGlobalText: string = '';
     titleAlert: string = 'This field is required';
 
-    constructor(private fb: FormBuilder, private dataService: AppGlobalApiService, private globalValidation: AppGlobalControllerService) {
+    constructor(private fb: FormBuilder, private dataService: AppGlobalApiService, private globalValidation: AppGlobalControllerService, private modalService: NgbModal) {
         this.rForm = fb.group(globalValidation.globalValidation);
     }
 
@@ -40,6 +42,24 @@ export class FormsComponent implements OnInit {
                 this.rForm.get('name').updateValueAndValidity();
             }
         )
+    }
+
+    open(content) {
+        this.modalService.open(content).result.then((result) => {
+            this.closeResult = `Closed with: ${result}`;
+        }, (reason) => {
+            this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+        });
+    }
+
+    private getDismissReason(reason: any): string {
+        if (reason === ModalDismissReasons.ESC) {
+            return 'by pressing ESC';
+        } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+            return 'by clicking on a backdrop';
+        } else {
+            return `with: ${reason}`;
+        }
     }
 
 }

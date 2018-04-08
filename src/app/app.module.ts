@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './modules/global-pages/header/header.component';
@@ -29,6 +29,7 @@ import { AppGlobalControllerService } from './app-global-controller/app-global-c
         , AppRoutingModule
         , ReactiveFormsModule
         , HttpClientModule
+        , NgbModule.forRoot()
     ],
     providers: [
         AppGlobalApiService

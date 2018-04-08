@@ -6,12 +6,12 @@ $font-stack:Helvetica, sans-serif;
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
-  background-color: $primary-color;
+  color: $color-1;
+  background-color: $color-1;
 }
 .custom-header {
-    background-color: $primary-color;
-    color:$secondary-color;
+    background-color: $color-1;
+    color:$color-2;
     height: 120px;
 }
 
