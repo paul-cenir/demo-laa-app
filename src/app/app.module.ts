@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PagesModule } from './modules/pages/pages.module';
+import { GlobalPagesModule } from './modules/global-pages/global-pages.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './modules/global-pages/header/header.component';
@@ -21,9 +22,11 @@ import { AppGlobalControllerService } from './app-global-controller/app-global-c
 
 @NgModule({
     declarations: [
+        //start for refactor
         HeaderComponent
         , SidebarComponent
         , FooterComponent
+        //end for refactor
         , AppComponent
         , FormsComponent
     ],
@@ -32,6 +35,7 @@ import { AppGlobalControllerService } from './app-global-controller/app-global-c
         , AppRoutingModule
         , ReactiveFormsModule
         , HttpClientModule
+        , GlobalPagesModule
         , PagesModule
         , NgbModule.forRoot()
     ],
