@@ -73,7 +73,31 @@ p {
      line-height: 28px;
     }
  }
-
+ .hs-7 {
+    P {
+     font-size: 20px;
+     color: $color-1;
+     margin-bottom: 1rem;
+     line-height: 28px;
+    }
+ }
+ .hs-8 {
+    P {
+     font-size: 30px;
+     color: $color-1;
+     margin-bottom: 1rem;
+     line-height: 28px;
+    }
+ }
+ .hs-9 {
+    P {
+     font-size: 45px;
+     color: $color-1;
+     margin-bottom: 1rem;
+     line-height: 28px;
+     font-weight:bold; 
+    }
+ }
 .p-ml-1 {
     max-width: 486px;
 }
@@ -170,6 +194,16 @@ p {
     height: 3px;
     width: 100%;
     background: $color-1;
+  
+}
+.with-l-d:before {
+    content: " ";
+    width: 3px;
+    height: 182px;
+    position: absolute;
+    background: $color-1;
+    left: 50%;
+    right: 50%;
 }
 //global container
 .h-c-1 {
@@ -280,7 +314,19 @@ p {
     min-height: 34px;
 }
 
-
+//global circle
+.circle-cont-2{
+    max-width: 794px;
+    margin: auto !important;
+    .logo-t-c {
+      p {
+        color: $color-1;
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+}
 
 
 
