@@ -1,0 +1,28 @@
+@import '~sass/variables';
+
+
+.global-footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer-modal {
+    padding: 0 28px;
+}
+.footer-style-1 {
+    height: 42px;
+    border-top: solid 1px $color-1;
+    align-items: center;
+    display: flex;
+    padding: 0 28px;
+    font-size: 12px;
+    color:$color-1;
+    div {
+        margin: 0 7px;
+    }
+}
+
+.footer-style-2-item i {
+    font-size: 20px;
+    margin: 0 1px;
+    cursor: pointer;
+}
