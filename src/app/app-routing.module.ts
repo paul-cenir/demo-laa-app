@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePageComponent } from './modules/pages/home-page/home-page.component';
+import { AboutComponent } from './modules/pages/about/about.component';
 import { FormsComponent } from './modules/pages/forms/forms.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomePageComponent },
+    { path: 'about', component: AboutComponent },
     { path: 'forms', component: FormsComponent },
 
 
