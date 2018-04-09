@@ -1,0 +1,62 @@
+<div class="global-backdrop" *ngIf="showSidebar" (click)="closeSidebar()">
+
+</div>
+<div class="global-hamburger" (click)="openSidebar()" *ngIf="!showSidebar">
+    <i class="fa fa-bars open" aria-hidden="true"></i>
+</div>
+<div class="global-sidebar-cont" id="my-side-nav" [ngClass]="{'show-global-side-bar': showSidebar, 'hide-global-side-bar': !showSidebar, 'third': false}">
+    <div class="global-hamburger" (click)="closeSidebar()" *ngIf="showSidebar">
+        <i class="fa fa-close close" aria-hidden="true"></i>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">HOME
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">ABOUT
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">CATEGORIES
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">JUDGES
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">WINNERS
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">SUBMIT
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">NEWS & UPDATES
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">FAQS
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">MECHANICS
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+    <div>
+        <a [routerLink]="['/home']" class="nav-link">MY ENTRY
+            <span class="sr-only">(current)</span>
+        </a>
+    </div>
+
+</div>
