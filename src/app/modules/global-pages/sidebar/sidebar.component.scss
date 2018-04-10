@@ -29,6 +29,7 @@
     flex-direction: column;
     .nav-link {
         color:$color-1;
+        font-weight: 200;
     }
 }
 
@@ -49,4 +50,7 @@
     width: 100%;
     z-index: 2;
     top: 0;
+}
+.active-link {
+    font-weight: bold !important;
 }

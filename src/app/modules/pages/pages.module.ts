@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MechanicsComponent } from './mechanics/mechanics.component';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     declarations: [
         AboutComponent
         , HomePageComponent
-        , CategoriesComponent
+        , CategoriesComponent, MechanicsComponent
     ]
 })
 export class PagesModule { }
