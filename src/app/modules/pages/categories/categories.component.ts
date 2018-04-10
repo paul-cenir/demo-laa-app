@@ -9,14 +9,16 @@ declare var $: any;
 })
 export class CategoriesComponent implements OnInit {
 
+    showAccordionActive: number = 1;
+
     constructor(config: NgbAccordionConfig) {
         // customize default values of accordions used by this component tree
         config.closeOthers = true;
         config.type = 'info';
     }
 
-    openAccordion() {
-
+    showAccordion(active) {
+        this.showAccordionActive = active;
     }
 
     ngOnInit() {
