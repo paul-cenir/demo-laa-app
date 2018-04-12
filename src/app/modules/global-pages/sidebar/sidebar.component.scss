@@ -8,14 +8,16 @@
     cursor: pointer;
     font-size: 30px;
     color:$color-1;
+    z-index: 4;
 }
 .global-hamburger i.close {
     position: absolute;
-    top: 24px;
+    top: 34px;
     left: 280px;
     cursor: pointer;
     font-size: 30px;
     color:$color-1;
+    z-index: 4;
 }
 .global-sidebar-cont {
     width: 260px;

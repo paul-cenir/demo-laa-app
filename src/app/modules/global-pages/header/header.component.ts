@@ -8,18 +8,17 @@ declare var $: any;
 export class HeaderComponent implements OnInit {
 
     constructor() { }
-
     ngOnInit() {
-        // $(".dropdown").hover(
-        //     function () {
-        //         $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
-        //         $(this).toggleClass('open');
-        //     },
-        //     function () {
-        //         $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
-        //         $(this).toggleClass('open');
-        //     }
-        // );
+        $(document).on("scroll", function () {
+            if
+        ($(document).scrollTop() > 1) {
+                $(".global-header").addClass("shrink");
+                $(".global-parent-container").css("cssText", "padding-top:100px");
+            }
+            else {
+                $(".global-header").removeClass("shrink");
+                $(".global-parent-container").css("cssText", "padding-top:0px");
+            }
+        });
     }
-
 }

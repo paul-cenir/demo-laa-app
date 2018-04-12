@@ -1,18 +1,46 @@
 @import '~sass/variables';
-
-
-$font-stack:Helvetica, sans-serif;
-
-
-body {
-  font: 100% $font-stack;
-  color: $color-1;
-  background-color: $color-1;
+//global container
+.global-header {
+    height: 400px;
+    background-image: url("../../../../assets/images/home-bg-1.png");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px $color-1;
+    transition: all 1s;
+   
+    width: 100%;
+    img {
+        width: 200px;
+    }
+    p {
+        margin: 0;
+    }
+   
 }
-.custom-header {
-    background-color: $color-1;
-    color:$color-2;
-    height: 120px;
+.shrink {
+    position: fixed;
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+    background-image: none;
+    background:$color-3;
+    height: 100px;
+    margin-bottom:100px; 
+    z-index: 3;
+  
+    img {
+        width: 30px;
+    }
+    p {
+        font-size: 20px;
+      
+
+    }
 }
-
-
+.parent-p-t {
+    padding-top: 222px;
+}
