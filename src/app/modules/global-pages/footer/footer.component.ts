@@ -12,15 +12,17 @@ export class FooterComponent implements OnInit {
     clickShowHideBox() {
         if (this.showBox) {
             this.showBox = false;
+            $(".footer-modal").css("cssText", "position:static");
+            $(".footer-style-1").css("cssText", "margin-top:none");
         } else {
             this.showBox = true;
+            $(".footer-modal").css("cssText", "position:absolute;bottom:42px;width:100%;margin-top:40px");
+            $(".footer-style-1").css("cssText", "margin-top:70px!important");
         }
 
 
-        window.scrollTo(0, document.body.scrollHeight);
-        setTimeout(function () {
-            $('html,body').animate({ scrollTop: document.body.scrollHeight });
-        }, 0);
+
+
     }
 
 
