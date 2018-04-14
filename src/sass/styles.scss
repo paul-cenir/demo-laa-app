@@ -456,6 +456,45 @@ p {
    
 }
 
+//global nav tabs
+.global-nav-tabs.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    .nav-link{
+        border:none !important;
+    }
+    a {
+        font-size:25px;
+        color:$color-1;
+        padding-bottom: 0;
+        margin-bottom: 36px;
+    }
+    .nav-link.active {
+        font-size:25px;
+        color:$color-1;
+        font-weight: bold;
+        border-bottom: solid 3px $color-1 !important;
+      
+    }
+ 
+}
+.parent-class-m { 
+    font-size: 14px;
+    color: $color-1;
+    text-align: left;
+    max-width: 607px;
+    margin: auto;
+    margin-bottom: 18px;
+    p,span {
+        font-size: 14px;
+        color:$color-1;
+    }
+}
+
 
 //global custom css
 .w-100 {
