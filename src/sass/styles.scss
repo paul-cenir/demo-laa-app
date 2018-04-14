@@ -116,6 +116,13 @@ p {
      font-weight:bold; 
     }
  }
+ .hs-12 {
+    p {
+     font-size: 25px;
+     color: $color-1;
+     margin-bottom: 1rem;
+    }
+ }
 .p-ml-1 {
     max-width: 486px;
 }
@@ -234,7 +241,7 @@ p {
     flex-direction: column;
 }
 .h-c-2 {
-    height: 300px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,6 +395,61 @@ p {
 //global custom image header 
 .a-w-im-t {
     width: 23px;
+}
+
+
+//global box image 
+//gawa
+.box-img-1 {
+    min-height: 267px;
+    background-image: url("../assets/images/home-bg-3.png");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 318px;
+}
+.box-img-title-1 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    p {
+        margin: 0px;
+        color:$color-3;
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.box-img-title-center {
+    margin-bottom: auto;
+    justify-content: baseline;
+    margin-top: auto;
+}
+.box-img-1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(145,114,9,0.8);
+}
+.box-img-dsc {
+    max-width: 80%;
+    p {
+        color:$color-3;
+        margin-top: 12px;
+    }
+}
+.mb-4-c {
+    .col-sm {
+        margin-bottom:1.7rem!important; 
+    }
+   
 }
 
 
