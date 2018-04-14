@@ -137,6 +137,10 @@ p {
     }
 }
 //global button design
+
+.btn.focus, .btn:focus {
+    box-shadow:none !important;
+}
 .btn-global-1 {
     background: none;
     color: $color-2;
@@ -147,7 +151,7 @@ p {
     cursor: pointer;
     font-size: 14px;
     outline: inherit;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 0 !important;
     &:focus {
         outline: none;
     }
