@@ -564,3 +564,7 @@ p {
 .no-min-w {
     max-width: none !important
 }
+
+
+//animation
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}

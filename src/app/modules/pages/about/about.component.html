@@ -179,8 +179,7 @@
 
             <div class="row min-h-steps">
                 <div class="col-sm-10">
-                    <!-- First Step -->
-                    <div class="setup-content-3" id="step-5">
+                    <div *ngIf="activeStepsData == 2018" class="w3-animate-zoom">
                         <div class="row">
                             <div class="col-sm p-relative">
                                 <img class="img-fluid g-img-5" src="../../../../assets/images/abs-jpg.jpg">
@@ -213,47 +212,28 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- Second Step -->
-                    <div class="setup-content-3" id="step-6">
-
-                    </div>
-
-
-                    <!-- Third Step -->
-                    <div class="setup-content-3" id="step-7">
-
-                    </div>
-
-
-                    <!-- Fourth Step -->
-                    <div class="setup-content-3" id="step-8">
-
-                    </div>
-
                 </div>
                 <div class="col-sm-2">
                     <!-- Stepper -->
                     <div class="steps-form-3 m-auto">
                         <div class="steps-row-3 setup-panel-3 d-flex justify-content-between">
                             <div class="steps-step-3">
-                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative active">
+                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative" (click)="activeSteps(2018)" [ngClass]="{'active':activeStepsData == 2018}">
                                     <div class="steps-form-year">2018</div>
                                 </div>
                             </div>
                             <div class="steps-step-3">
-                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative">
+                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative" (click)="activeSteps(2017)" [ngClass]="{'active':activeStepsData == 2017}">
                                     <div class="steps-form-year">2017</div>
                                 </div>
                             </div>
                             <div class="steps-step-3">
-                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative">
+                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative" (click)="activeSteps(2016)" [ngClass]="{'active':activeStepsData == 2016}">
                                     <div class="steps-form-year">2016</div>
                                 </div>
                             </div>
                             <div class="steps-step-3">
-                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative">
+                                <div class="btn btn-info btn-circle-3 waves-effect ml-0 p-relative" (click)="activeSteps(2015)" [ngClass]="{'active':activeStepsData == 2015}">
                                     <div class="steps-form-year">2015</div>
                                 </div>
                             </div>
