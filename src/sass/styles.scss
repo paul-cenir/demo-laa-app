@@ -498,7 +498,46 @@ p {
 //global modal
 .modal-dialog {
     max-width: 600px !important;
+    margin: 4.75rem auto !important;
 }
+.globa-modal {
+    .modal-header {
+        border:none !important;
+        .close {
+            position: absolute;
+            right: 18px;
+            top: 8px;
+            font-size: 34px;
+            color:$color-1;
+            opacity: 1;
+        }
+    }
+    
+    .modal-title {
+        max-width: 330px;
+        text-align: center;
+        margin: auto;
+        margin-top: 18px;
+        p {
+            font-size: 25px;
+            margin-bottom: 0px;
+        }
+    }
+    .modal-body {
+        p {
+            font-size:14px;
+            color:$color-1;
+        }
+        .title-text {
+            p {
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+   
 
 
 //global custom css

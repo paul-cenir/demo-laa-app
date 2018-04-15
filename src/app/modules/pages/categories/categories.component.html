@@ -83,7 +83,7 @@
                             40%
                         </p>
                     </div>
-                    <button class="btn-global-1">View Details</button>
+                    <button class="btn-global-1" (click)="open(content)">View Details</button>
                 </div>
                 <div class="col-sm">
                     <div class="global-c-1">
@@ -101,7 +101,7 @@
                             40%
                         </p>
                     </div>
-                    <button class="btn-global-1">View Details</button>
+                    <button class="btn-global-1" (click)="open(content)">View Details</button>
                 </div>
 
             </div>
@@ -551,17 +551,49 @@
 
 <ng-template #content let-c="close" let-d="dismiss" class="global-modal">
     <div class="globa-modal">
-        <div class="modal-header">
-            <h4 class="modal-title">Modal title</h4>
+        <div class="modal-header p-relative">
+            <div class="modal-title">
+                <p>Behavioral Manifestation of Group Values</p>
+                <p> (40%)</p>
+            </div>
             <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-            <p>One fine body&hellip;</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+            <p>
+                In the completion of the achievement the individual or team members must have demonstrated one or more of the following Lopez
+                Values:
+            </p>
+            <div class="title-text">
+                <p>PIONEERING ENTREPRENEURAL SPIRIT​</p>
+            </div>
+            <p>
+                - Envisioning possibilities and having the courage to make them real
+                <br> - We choose to build businesses that are catalyst for national development
+            </p>
+            <div class="title-text">
+                <p>BUSINESS EXCELLENCE</p>
+            </div>
+            <p>
+                - Being the best in everything we do in order to gain and maintain leadership in the markets we serve
+                <br> - We conduct our business along a very high bar and hold ourselves accountable for excellence
+            </p>
+
+            <div class="title-text">
+                <p>UNITY</p>
+            </div>
+            <p>
+                - Having a strong shared identity based on a common vision, mutual respect, "malasakit" and accountability
+                <br> - We work best when our people and our various businesses collaborate and help each other and constantly
+                build a culture that encourages this
+            </p>
+            <div class="title-text">
+                <p>NATIONALISM</p>
+            </div>
+            <p>
+                - Carrying the name "Filipino" and representing the Philippines with pride
+            </p>
         </div>
     </div>
 </ng-template>
