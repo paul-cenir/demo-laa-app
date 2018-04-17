@@ -568,3 +568,25 @@ p {
 
 //animation
 .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+
+
+//global ellipsis
+.ellip {
+    display: block;
+    height: 100%;
+  }
+  
+  .ellip-line {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    max-width: 100%;
+  }
+  
+  .ellip,
+  .ellip-line {
+    position: relative;
+    overflow: hidden;
+  }

@@ -5,7 +5,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MechanicsComponent } from './mechanics/mechanics.component';
-
+import { CustomEllipsisDirective } from '../../app-global-directives/custom-ellipsis.directive';
 
 @NgModule({
     imports: [
@@ -15,7 +15,9 @@ import { MechanicsComponent } from './mechanics/mechanics.component';
     declarations: [
         AboutComponent
         , HomePageComponent
-        , CategoriesComponent, MechanicsComponent
+        , CategoriesComponent
+        , MechanicsComponent
+        , CustomEllipsisDirective
     ]
 })
 export class PagesModule { }

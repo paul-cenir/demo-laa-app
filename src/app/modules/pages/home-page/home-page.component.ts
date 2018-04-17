@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppComponent } from '../../../app.component';
-import { AppGlobalApiService } from '../../../app-global-api/app-global-api.service'
+import { AppGlobalApiService } from '../../../app-global-api/app-global-api.service';
+
 declare var $: any;
 @Component({
     selector: 'app-home-page',
@@ -16,12 +17,17 @@ export class HomePageComponent implements OnInit {
 
     }
 
+
+    //https://www.jqueryscript.net/text/Truncating-Text-By-Lines-jQuery-ellipsis.html
+
     ngOnInit() {
         this.name = this.globalDataService.globalData.name;
         this.title = this.globalDataService.globalData.title;
         this.lisOfHeroes = this.globalDataService.lisOfHeroes;
 
-
+        $('.overflow').ellipsis({
+            responsive: true
+        });
     }
 
 }
