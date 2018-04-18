@@ -17,17 +17,9 @@ export class HomePageComponent implements OnInit {
 
     }
 
-
-    //https://www.jqueryscript.net/text/Truncating-Text-By-Lines-jQuery-ellipsis.html
-
     ngOnInit() {
         this.name = this.globalDataService.globalData.name;
         this.title = this.globalDataService.globalData.title;
         this.lisOfHeroes = this.globalDataService.lisOfHeroes;
-
-        $('.overflow').ellipsis({
-            responsive: true
-        });
     }
-
 }
