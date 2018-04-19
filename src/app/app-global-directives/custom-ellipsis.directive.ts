@@ -1,24 +1,21 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, Input, ElementRef } from '@angular/core';
 declare var $: any;
+
 @Directive({
     selector: '[appCustomEllipsis]'
 })
 export class CustomEllipsisDirective {
+    @Input() ellipsisLine: number;
 
-    constructor(el: ElementRef) {
-        console.log(el.nativeElement);
-        // el.nativeElement.style.backgroundColor = 'yellow';
-
+    constructor(public el: ElementRef) {
         //https://www.jqueryscript.net/text/Truncating-Text-By-Lines-jQuery-ellipsis.html
-        // $('.overflow').ellipsis({
-        //     responsive: true,
-        //     lines: 3,
-        // });
     }
 
     ngOnInit() {
+        $(this.el.nativeElement).ellipsis({
+            responsive: true,
+            lines: this.ellipsisLine,
+        });
 
     }
-
-
 }
