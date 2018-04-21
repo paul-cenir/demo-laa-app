@@ -6,3 +6,36 @@
         position: relative;
     }
 }
+
+
+
+//responsive for home
+
+//size 728
+@media only screen and (max-width: 728px) {
+    .g-r-h {
+        .mb-4-c .col-sm-4 {
+            max-width: 50%;
+        }
+    }
+}
+
+//size 568
+@media only screen and (max-width: 568px) {
+    .g-r-h {
+        .mb-4-c {
+            padding: 0 12%;
+            .col-sm-4 {
+                max-width: 100%;
+            }
+        }
+
+        .h-c-2 {
+            p {
+                padding: 0 20%;
+            }
+        }
+    }
+}
+
+

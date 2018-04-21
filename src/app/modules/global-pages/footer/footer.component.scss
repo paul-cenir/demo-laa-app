@@ -71,3 +71,37 @@
         margin-bottom: 0;
     }
 }
+
+
+//responsive for footer
+
+//size 728
+@media only screen and (max-width: 846px) {
+    .footer-modal {
+        bottom: 105px !important;
+    }
+    .footer-style-1 {
+        height: 105px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .mr-auto {
+            margin-right: 0 !important;
+        }
+        div {
+            margin-bottom: 4px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .global-footer {
+        .btn {
+            min-width: 260px;
+        }
+    }
+    .chat-box-global-show {
+        width: 260px;
+    }
+}

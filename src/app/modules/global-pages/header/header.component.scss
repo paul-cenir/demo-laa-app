@@ -28,19 +28,76 @@
     transition-timing-function: ease-in-out;
     background-image: none;
     background:$color-3;
-    height: 100px;
+    height: 100px !important;
     margin-bottom:100px; 
     z-index: 3;
   
     img {
-        width: 30px;
+        width: 30px !important;
     }
     p {
-        font-size: 20px;
+        font-size: 20px !important;
       
 
     }
 }
 .parent-p-t {
     padding-top: 222px;
+}
+
+
+//responsive for footer
+
+//size 728
+@media only screen and (max-width: 846px) {
+    .global-header {
+        height: 264px;
+        img {
+            width: 108px;
+        }
+    }
+    .hs-1 p {
+        font-size: 34px;
+    }
+}
+
+//size 728
+@media only screen and (max-width: 420px) {
+    .shrink {
+        flex-direction: row;
+        padding-left: 46px;
+    }
+    .global-header {
+        height: 200px;
+      
+        img {
+            width: 89px;
+            margin-right: 12px;
+        }
+    }
+    .hs-1 p {
+        font-size: 24px;
+    }
+}
+
+//size 320
+@media only screen and (max-width: 411px) {
+    .shrink {
+        p {
+            font-size: 14px !important;
+        }
+        img {
+            width: 20px !important;
+        }
+    }
+    .global-header {
+        height: 200px;
+      
+        img {
+            width: 55px;
+        }
+    }
+    .hs-1 p {
+        font-size: 24px;
+    }
 }
