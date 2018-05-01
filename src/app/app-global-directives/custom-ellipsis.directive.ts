@@ -14,11 +14,11 @@ export class CustomEllipsisDirective {
     }
 
     ngOnInit() {
-        // $(this.el.nativeElement).ellipsis({
-        //     responsive: true,
-        //     lines: this.ellipsisLine,
-        // });
+        $(this.el.nativeElement).ellipsis({
+            responsive: true,
+            lines: this.ellipsisLine,
+        });
 
-        // $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
+        $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
     }
 }
