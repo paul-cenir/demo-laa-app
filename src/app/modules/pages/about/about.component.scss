@@ -75,3 +75,129 @@
      background: #413611 !important;
  }
 
+
+
+ //responsive for home
+
+//size 728
+
+
+@media only screen and (max-width: 991px) {
+    .g-r-about {
+        .container {
+            max-width: none;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .g-r-about {
+        .global-c-1 {
+            width: 140px;
+            height : 140px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 728px) {
+    .g-r-about {
+        .mb-4-c .col-sm-4 {
+            max-width: 50%;
+        }
+        .about-1-r {
+            .col-sm {
+                width: 100%;
+                flex-basis: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .g-r-about {
+        .global-c-1 {
+            width: 100px;
+            height : 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .g-r-about {
+        .a-l-img {
+            width: 200px;
+        }
+        .min-h-steps {
+            .col-sm-10 {
+                width: 90%;
+                padding-right: 35px;
+            }
+            .col-sm-2 {
+                width: 10%;
+            }
+            .th-img-1 {
+                .col-sm {
+                    width: 50%;
+                }
+            }
+            .steps-form-3 {
+                left: -21px;
+            }
+        }
+        .with-l-d:before {
+            display:none;
+        }
+
+        .circle-cont-2 {
+            .col-sm {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+//size 568
+@media only screen and (max-width: 568px) {
+    .g-r-about {
+        .mb-4-c {
+            padding: 0 12%;
+            .col-sm-4 {
+                max-width: 100%;
+            }
+        }
+
+        .h-c-2 {
+            p {
+                padding: 0 10%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 549px) {
+    .g-r-about {
+        .circle-cont-2 {
+            .col-sm {
+                width: 50%;
+                flex-basis: auto;
+                margin-bottom: 18px;
+            }
+            &.mt-3 {
+                margin: 0 !important;
+                
+            }
+        }
+        .steps-form-3 {
+            left: -32px !important;
+        }
+    }
+}
+
