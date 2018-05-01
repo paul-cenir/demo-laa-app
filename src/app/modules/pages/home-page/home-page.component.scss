@@ -6,7 +6,9 @@
         position: relative;
     }
 }
-
+.padding-ellip {
+    padding: 0 30px;
+}
 
 
 //responsive for home
@@ -22,6 +24,7 @@
 
 //size 568
 @media only screen and (max-width: 568px) {
+    
     .g-r-h {
         .mb-4-c {
             padding: 0 12%;
@@ -35,9 +38,7 @@
                 padding: 0 10%;
             }
         }
-        span.ellip {
-            padding: 0 30px;
-        }
+       
     }
 }
 

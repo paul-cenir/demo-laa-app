@@ -9,13 +9,20 @@ export class CustomEllipsisDirective {
 
     constructor(public el: ElementRef) {
         //https://www.jqueryscript.net/text/Truncating-Text-By-Lines-jQuery-ellipsis.html
+        setTimeout(() => {
+            $(el.nativeElement).ellipsis({
+                responsive: true,
+                lines: this.ellipsisLine,
+            });
+        }, 50);
+
     }
 
     ngOnInit() {
-        $(this.el.nativeElement).ellipsis({
-            responsive: true,
-            lines: this.ellipsisLine,
-        });
+        // $(this.el.nativeElement).ellipsis({
+        //     responsive: true,
+        //     lines: this.ellipsisLine,
+        // });
 
     }
 }
