@@ -9,12 +9,7 @@ export class CustomEllipsisDirective {
 
     constructor(public el: ElementRef) {
         //https://www.jqueryscript.net/text/Truncating-Text-By-Lines-jQuery-ellipsis.html
-        setTimeout(() => {
-            $(el.nativeElement).ellipsis({
-                responsive: true,
-                lines: this.ellipsisLine,
-            });
-        }, 50);
+
 
     }
 
@@ -24,5 +19,6 @@ export class CustomEllipsisDirective {
         //     lines: this.ellipsisLine,
         // });
 
+        // $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
     }
 }

@@ -21,5 +21,13 @@ export class HomePageComponent implements OnInit {
         this.name = this.globalDataService.globalData.name;
         this.title = this.globalDataService.globalData.title;
         this.lisOfHeroes = this.globalDataService.lisOfHeroes;
+
+
+        $(".ellip-parent").ellipsis({
+            responsive: true,
+            lines: 3,
+        });
+
+        $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
     }
 }
