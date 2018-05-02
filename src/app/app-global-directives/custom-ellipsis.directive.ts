@@ -14,11 +14,30 @@ export class CustomEllipsisDirective {
     }
 
     ngOnInit() {
-        $(this.el.nativeElement).ellipsis({
-            responsive: true,
-            lines: this.ellipsisLine,
+
+        $(this.el.nativeElement).fewlines({
+
+            // text for 'read less' link
+            'closeMark': 'close',
+
+            // text for 'read more' link
+            'openMark': '',
+
+            // display 'read more' and 'read less' links in a new line
+            'newLine': false,
+
+            // the number of lines
+            'lines': this.ellipsisLine
+
         });
 
-        $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
+
+
+        // $(this.el.nativeElement).ellipsis({
+        //     responsive: true,
+        //     lines: this.ellipsisLine,
+        // });
+
+        // $(".ellip-parent .ellip").css("cssText", "padding:0 30px !important;")
     }
 }
